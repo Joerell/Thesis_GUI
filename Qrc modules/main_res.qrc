@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="images">
+    <file>close_icon.png</file>
+    <file>maximie_icon.png</file>
+    <file>minimize_icon.png</file>
+    <file>proper_mask.png</file>
+    <file>improper_wearing.png</file>
+    <file>daily_count.png</file>
+    <file>pause.png</file>
+    <file>play.png</file>
+    <file>logout_logo.png</file>
+    <file>surveillance_report.png</file>
+    <file>dashboard_logo.png</file>
+    <file>surveillance_logo.png</file>
+    <file>thesis_system_logo_with_no_text.png</file>
+  </qresource>
+  <qresource prefix="faceholder">
+    <file>faceholder/blank_faceholder.png</file>
+    <file>faceholder/faceholder1.jpg</file>
+    <file>faceholder/faceholder2.jpg</file>
+    <file>faceholder/faceholder4.jpg</file>
+    <file>faceholder/faceholder3.jpg</file>
+    <file>faceholder/faceholder5.jpg</file>
+    <file>faceholder/faceholder_dashoard.jpg</file>
+  </qresource>
+</RCC>

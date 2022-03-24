@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="images">
+    <file>thesis_system_logo_with_no_text.png</file>
+  </qresource>
+</RCC>
