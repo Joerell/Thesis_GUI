@@ -63,7 +63,7 @@ background-color: rgb(255, 255, 255);
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <property name="spacing">
-          <number>40</number>
+          <number>0</number>
          </property>
          <property name="leftMargin">
           <number>1</number>
@@ -196,7 +196,7 @@ QPushButton#dashboard_btn:pressed{
             <string>Dashboard</string>
            </property>
            <property name="icon">
-            <iconset resource="../gui_image_resource/main_res.qrc">
+            <iconset resource="gui_image_resource/main_res.qrc">
              <normaloff>:/images/dashboard_logo.png</normaloff>:/images/dashboard_logo.png</iconset>
            </property>
           </widget>
@@ -239,7 +239,7 @@ QPushButton#surveillance_btn:pressed{
             <string>Surveillance</string>
            </property>
            <property name="icon">
-            <iconset resource="../gui_image_resource/main_res.qrc">
+            <iconset resource="gui_image_resource/main_res.qrc">
              <normaloff>:/images/surveillance_logo.png</normaloff>:/images/surveillance_logo.png</iconset>
            </property>
           </widget>
@@ -281,8 +281,50 @@ QPushButton#history_btn:pressed{
             <string>History</string>
            </property>
            <property name="icon">
-            <iconset resource="../gui_image_resource/main_res.qrc">
+            <iconset resource="gui_image_resource/main_res.qrc">
              <normaloff>:/images/surveillance_report.png</normaloff>:/images/surveillance_report.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="vgg16_btn">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Helvetica</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#vgg16_btn{
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	border: none;
+}
+
+QPushButton#vgg16_btn:hover{
+background-color: rgb(241, 241, 241);
+}
+
+QPushButton#vgg16_btn:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color: rgb(182, 182, 182);
+}</string>
+           </property>
+           <property name="text">
+            <string>Vgg16</string>
            </property>
           </widget>
          </item>
@@ -335,7 +377,7 @@ QPushButton#logout_btn:pressed{
             <string>Logout</string>
            </property>
            <property name="icon">
-            <iconset resource="../gui_image_resource/main_res.qrc">
+            <iconset resource="gui_image_resource/main_res.qrc">
              <normaloff>:/images/logout_logo.png</normaloff>:/images/logout_logo.png</iconset>
            </property>
           </widget>
@@ -357,7 +399,7 @@ QPushButton#logout_btn:pressed{
 </string>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>3</number>
        </property>
        <widget class="QWidget" name="dashboard_page">
         <widget class="QFrame" name="frame_3">
@@ -1153,7 +1195,7 @@ QPushButton#resume_btn:pressed{
              <string>Resume</string>
             </property>
             <property name="icon">
-             <iconset resource="../gui_image_resource/main_res.qrc">
+             <iconset resource="gui_image_resource/main_res.qrc">
               <normaloff>:/images/play.png</normaloff>:/images/play.png</iconset>
             </property>
             <property name="iconSize">
@@ -1205,7 +1247,7 @@ QPushButton#pause_btn:pressed{
              <string>Pause</string>
             </property>
             <property name="icon">
-             <iconset resource="../gui_image_resource/main_res.qrc">
+             <iconset resource="gui_image_resource/main_res.qrc">
               <normaloff>:/images/pause.png</normaloff>:/images/pause.png</iconset>
             </property>
             <property name="iconSize">
@@ -1257,7 +1299,7 @@ QPushButton#end_btn:pressed{
              <string>End</string>
             </property>
             <property name="icon">
-             <iconset resource="../gui_image_resource/main_res.qrc">
+             <iconset resource="gui_image_resource/main_res.qrc">
               <normaloff>:/images/play.png</normaloff>:/images/play.png</iconset>
             </property>
             <property name="iconSize">
@@ -1545,6 +1587,82 @@ QPushButton#delete_btn:pressed{
          </property>
         </widget>
        </widget>
+       <widget class="QWidget" name="vgg16_page">
+        <widget class="QFrame" name="frame_9">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>90</y>
+           <width>541</width>
+           <height>451</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(218, 218, 218);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="classify_btn">
+            <property name="text">
+             <string>Classify</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="alert_btn">
+            <property name="text">
+             <string>Alert</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QFrame" name="frame_10">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>30</y>
+           <width>281</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Classification:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="classification_result_lbl">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
       </widget>
       <widget class="QFrame" name="top_margin">
        <property name="geometry">
@@ -1650,7 +1768,7 @@ border-image: url(:/images/close_icon.png);</string>
   </widget>
  </widget>
  <resources>
-  <include location="../gui_image_resource/main_res.qrc"/>
+  <include location="gui_image_resource/main_res.qrc"/>
  </resources>
  <connections/>
 </ui>
